@@ -1,0 +1,39 @@
+/* full html page set */
+*{
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* container */
+.container{
+    padding: 20px;
+    gap: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+/*  container into 6 cards set a css  */
+.cards{
+    background-color: blue;
+    color: white;
+    height: 50px;
+    border: 1px solid black;
+    border-radius: 8px;
+    text-align: center;
+    padding-top: 15px;
+}
+
+
+/* mobile screen 768 (427-768) ethuvarai erunthu 769 mela pona cards ellam 2 column ah varum  */
+@media screen and (max-width:769px) {
+    .container{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+/* mobile screen 426 (0-426) ethuvarai erunthu 427 mela pona cards ellam 1 column ah varum  */
+@media screen and (max-width:427px) {
+    .container{
+        grid-template-columns: 1fr;
+    }
+}
